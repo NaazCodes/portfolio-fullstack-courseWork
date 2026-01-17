@@ -1,7 +1,7 @@
 ## Version 1 – Portfolio Structure (HTML & CSS)
 
 ### Home Page Layout
-![Home Page](Screenshots/Home.png)
+![Home Page](Screenshots/home.png)
 
 ### About Section Layout
 ![About Section](Screenshots/About.png)
