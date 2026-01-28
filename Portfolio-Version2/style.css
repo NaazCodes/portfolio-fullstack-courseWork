@@ -1,0 +1,840 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hero {
+    position: relative;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(168, 85, 247, 0.4), transparent 40%),
+        radial-gradient(circle at 20% 70%, rgba(99, 102, 241, 0.4), transparent 40%),
+        linear-gradient(135deg, #4f46e5, #9333ea);
+    overflow: hidden;
+}
+
+.bg-circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+.bg-circle2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(234, 225, 225, 0.183);
+    border-radius: 50%;
+    bottom: -160px;
+    left: 400px;
+}
+
+.bg-circle3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 252, 252, 0.124);
+    border-radius: 50%;
+    bottom: 250px;
+    left: 700px;
+}
+
+.navConatiner {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 1.2rem;
+
+}
+
+li {
+    list-style: none;
+    transition: transform 0.3s ease-out;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+#intro {
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    margin-top: 14%;
+    color: white;
+    position: relative;
+    z-index: 9999;
+
+}
+
+.myImg {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -105px;
+    left: -58px;
+    opacity: 0.6;
+}
+
+.project-bg {
+    padding-bottom: 60px;
+    background: rgba(76, 36, 238, 0.438);
+    width: 100%;
+    color: white;
+
+}
+
+#project-heading {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 70px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    background: rgba(76, 36, 238, 0.84);
+}
+
+
+.project-title {
+    color: rgba(76, 36, 238, 0.84);
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    text-align: center;
+}
+
+.project-tile {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(145deg,
+            #ffffff 0%,
+            #f6f6f6 45%,
+            #e6e6e6 100%);
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.35);
+    border-radius: 30px;
+}
+
+.project-grid {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#productLanding {
+    height: 300px;
+    width: 300px;
+}
+
+#recipeFinder {
+    height: 300px;
+    width: 400px;
+}
+
+#webAgencyPage,
+#technicalDocument,
+#tributePage {
+    height: 320px;
+    width: 250px;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(76, 36, 238, 0.256);
+    color: #393e46;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+.project-tile:hover .project-overlay {
+    transform: translateX(0);
+}
+
+.project-tile:hover .project-title {
+    display: none;
+}
+
+.overlay-text {
+    font-size: 1.3rem;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+#skills-section {
+  padding: 60px 0;
+  background: white;
+  text-align: center;
+
+}
+
+.skills-heading {
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 60px;
+  color: #4f46e5;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skill-card {
+  width: 140px;
+  height: 140px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #f6f6f6 45%,
+      #e6e6e6 100%
+    );
+
+  border-radius: 20px;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(17px);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: #9333ea;
+}
+
+.breaker{
+    width: 100%;
+    height:2px;
+    background: #9333ea;
+}
+
+
+#certificates-section {
+    padding: 80px 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.15), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.12), transparent 40%),
+        linear-gradient(135deg,
+            #4f46e5,
+            #6366f1,
+            #8b5cf6,
+            #9333ea);
+}
+
+#certificate-heading {
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    color: aliceblue;
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+
+.certificate-image {
+    height: 210px;
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 251, 251, 0.2);
+    box-shadow: 6px 6px 14px rgba(131, 131, 131, 0.35);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease;
+}
+
+.certificate-image:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+#about-section {
+    min-height: 70vh;
+    padding: 40px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-frame {
+    width: 700px;
+    max-width: 1000px;
+    min-height: 530px;
+    background: linear-gradient(135deg, #736ed3, #9333ea);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.about-card {
+
+    width: 55%;
+    max-width: 800px;
+    position: relative;
+    --border-color: gray;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: "Outfit", sans-serif;
+}
+
+.about-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background:
+    linear-gradient(var(--border-color), var(--border-color)) top left,
+    linear-gradient(var(--border-color), var(--border-color)) top right,
+    linear-gradient(var(--border-color), var(--border-color)) bottom right,
+    linear-gradient(var(--border-color), var(--border-color)) bottom left;
+
+  background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+  background-repeat: no-repeat;
+
+  filter:
+    drop-shadow(0 0 6px color-mix(in srgb, var(--border-color) 70%, transparent))
+    drop-shadow(0 0 12px color-mix(in srgb, var(--border-color) 40%, transparent));
+
+  transition: background-size 0.6s ease;
+  pointer-events: none;
+}
+
+
+.about-card:hover::after {
+  background-size:
+    100% 2px,
+    2px 100%,
+    100% 2px,
+    2px 100%;
+}
+
+.about-card h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: #9333ea;
+}
+
+.about-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: #333;
+}
+
+
+.resume-btn {
+    margin-top: 18px;
+    padding: 12px 28px;
+    background:
+        radial-gradient(circle at 80% 30%, rgba(168, 85, 247, 0.4), transparent 40%),
+        radial-gradient(circle at 20% 70%, rgba(99, 102, 241, 0.4), transparent 40%),
+        linear-gradient(135deg, #4f46e5, #9333ea);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background:
+        radial-gradient(circle at 90% 90%,
+            rgba(168, 85, 247, 0.45) 0%,
+            rgba(168, 85, 247, 0.25) 30%,
+            transparent 65%),
+        radial-gradient(circle at 10% 10%,
+            rgba(79, 70, 229, 0.35) 0%,
+            rgba(79, 70, 229, 0.15) 35%,
+            transparent 70%);
+    color: #111;
+}
+
+.breaker2{
+    width: 100%;
+    height:2px;
+    background: #f0eff1;
+}
+
+#footer {
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+
+.footer-brand h3 {
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+}
+
+.footer-brand p {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: white;
+    color: #4f46e5;
+    transform: translateY(-3px);
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* Responsiveness */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .myImg {
+        left: -80px;
+        bottom: -80px;
+        height: 550px;
+        width: 550px;
+    }
+
+    #intro {
+        font-size: 1.5rem;
+        margin-top: 18%;
+    }
+
+    #navItems {
+        gap: 50px;
+        font-size: 1.3rem;
+    }
+
+    .bg-circle {
+        width: 450px;
+        height: 450px;
+    }
+
+    .bg-circle2 {
+        left: 250px;
+    }
+
+    #project-heading {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+
+    .project-grid {
+        width: 85vw;
+        gap: 25px;
+    }
+
+    #productLanding,
+    #recipeFinder,
+    #webAgencyPage,
+    #technicalDocument,
+    #tributePage {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about-frame {
+        width: 90%;
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .about-card {
+        width: 65%;
+        padding: 35px;
+    }
+
+    .about-card h2 {
+        font-size: 26px;
+    }
+
+    .about-card p {
+        font-size: 13.5px;
+    }
+
+    .footer-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .myImg {
+        left: -80px;
+        bottom: -80px;
+        height: 450px;
+        width: 450px;
+    }
+
+    .navConatiner {
+        margin-top: 50px;
+    }
+
+    #navItems {
+        flex-wrap: wrap;
+        gap: 30px;
+        font-size: 1.2rem;
+    }
+
+    #intro {
+        font-size: 1.2rem;
+        margin-top: 25%;
+        padding: 0 20px;
+    }
+
+    /* .bg-circle,
+    .bg-circle2,
+    .bg-circle3 {
+        display: none;
+    } */
+
+    .bg-circle {
+        width: 450px;
+        height: 450px;
+    }
+
+    .bg-circle2 {
+        left: 250px;
+    }
+
+    #project-heading {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+
+    .project-grid {
+        width: 85vw;
+        gap: 25px;
+    }
+
+    #productLanding,
+    #recipeFinder,
+    #webAgencyPage,
+    #technicalDocument,
+    #tributePage {
+        width: 280px;
+        height: 280px;
+    }
+
+    .project-overlay:hover {
+        transform: translateX(0);
+        background: rgba(76, 36, 238, 0.12);
+    }
+
+    .overlay-text {
+        font-size: 1.1rem;
+    }
+
+    #about-section {
+        padding: 30px 20px;
+    }
+
+    .about-frame {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .about-card {
+        width: 85%;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .about-card h2 {
+        font-size: 24px;
+    }
+
+    .about-card p {
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+    .resume-btn {
+        padding: 11px 24px;
+    }
+
+     .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-links a {
+        font-size: 1.1rem;
+    }
+
+    .footer-socials a {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    #intro {
+        font-size: 1.1rem;
+        margin-top: 30%;
+    }
+
+    .myImg {
+        height: 400px;
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    #navItems {
+        font-size: 1rem;
+        gap: 25px;
+    }
+
+    #project-heading {
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+    }
+
+    .project-grid {
+        gap: 20px;
+    }
+
+    #productLanding,
+    #recipeFinder,
+    #webAgencyPage,
+    #technicalDocument,
+    #tributePage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-tile {
+        height: 230px;
+        border-radius: 22px;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
+    }
+
+    #about-section {
+        padding: 20px 15px;
+    }
+
+    .about-frame {
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.22);
+    }
+
+    .about-card {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .about-card h2 {
+        font-size: 21px;
+        margin-bottom: 14px;
+    }
+
+    .about-card p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .resume-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .skill-card {
+  width: 90px;
+  height: 90px;
+}
+
+.certificate-image {
+    height: 190px;
+    width: 240px;
+}
+
+#footer {
+        padding-top: 35px;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.35rem;
+    }
+
+    .footer-brand p {
+        font-size: 0.95rem;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .footer-socials {
+        gap: 12px;
+    }
+
+    .footer-socials a {
+        width: 34px;
+        height: 34px;
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding: 12px 15px;
+    }
+
+}
