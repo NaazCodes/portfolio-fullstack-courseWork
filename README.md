@@ -11,3 +11,6 @@
 
 ### Footer Section Layout
 ![Footer Section](Screenshots/Footer.png)
+
+## Version 2 – Portfolio Implementation
+
