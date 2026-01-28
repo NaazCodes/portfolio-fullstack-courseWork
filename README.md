@@ -17,7 +17,7 @@
 ![Home Page](Screenshots-V2/home.png)
 
 ### Projects Section
-![Projects Page](Screenshots-V2/projectHeading.png)
+![Projects Page](Screenshots-V2/proectHeading.png)
 ![Projects Page](Screenshots-V2/projects.png)
 
 ### Skills Section
