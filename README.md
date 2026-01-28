@@ -13,4 +13,5 @@
 ![Footer Section](Screenshots/Footer.png)
 
 ## Version 2 – Portfolio Implementation
-
+### Home Page
+![Home Page](Screenshots-V2/home.png)
